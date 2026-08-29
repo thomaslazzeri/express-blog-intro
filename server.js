@@ -16,11 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/bacheca', (req, res) => {
-  res.send('Homepage of the posts');
-});
-
-app.get('/posts', (req, res) => {
-res.json(posts);
+  res.json(posts);
 });
 
 app.listen(port, () => {
